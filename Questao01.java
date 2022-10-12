@@ -8,8 +8,8 @@ public class Questao01 {
                      
 
         int aux;
-        for(int i = 0; i < vetor.length; i++){ // O(N)
-            for(int j = i + 1; j < vetor.length; j++){ //O(N)
+        for(int i = 0; i < vetor.length; i++){
+            for(int j = i + 1; j < vetor.length; j++){ 
                 if (vetor[i] < vetor[j]){
                     aux = vetor[j];
                     vetor[j] = vetor[i];
@@ -18,7 +18,7 @@ public class Questao01 {
             }
         }
         
-        System.out.println("\n\nVetor ordenado");
+        System.out.println("\n\nVetor Decrescente");
         for(int i = 0; i < vetor.length; i++){
             System.out.print(vetor[i] + " ");
         }
